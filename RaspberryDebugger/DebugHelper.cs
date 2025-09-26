@@ -45,7 +45,7 @@ namespace RaspberryDebugger
     /// </summary>
     internal static class DebugHelper
     {
-        private const string SupportedVersions = ".NET Core 3.1 or .NET 5 + 6";
+        private const string SupportedVersions = ".NET Core 3.1, .NET 5, 6, 7, 8";
         /// <summary>
         /// Ensures that the native Windows OpenSSH client is installed, prompting
         /// the user to install it if necessary.
@@ -184,7 +184,7 @@ namespace RaspberryDebugger
             {
                 MessageBox.Show(
                     $@"The .NET Core SDK [{sdkVersion}] is not currently supported. Only .NET Core versions [v3.1] or later will ever be supported
-                    Note that we currently support only official SDKs (not previews or release candidates) and we check for new .NET Core SDKs every week or two.  
+                    Note that we currently support .NET 3.1, .NET 5, .NET 6, .NET 7, and .NET 8.
                     Submit an issue if you really need support for a new SDK ASAP:	
                     https://github.com/nforgeio/RaspberryDebugger/issues",
                     @"SDK Not Supported",
